@@ -1,0 +1,4 @@
+1. Nodejs is single Threaded.
+2. Is Runtime Environment to run Javascript.
+3. runs on V8 Engine.
+4. Not a programming Language.
