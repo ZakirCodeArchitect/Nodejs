@@ -2,7 +2,7 @@ const colors = require('colors')
 
 let a=5;
 
-if(a===15)
+if(a===5) // Triple Equal to also checks the type of the value e.g string, int??
 {
     console.log("Correct".green)
 }
