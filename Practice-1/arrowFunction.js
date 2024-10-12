@@ -2,6 +2,7 @@ function test(a){
     return a*5;
 }
 
-const test = (b) => a*5;
+const result = test(5);
+console.log(result)
 
-console.log(a)
+const test1 = (b) => a*5;
