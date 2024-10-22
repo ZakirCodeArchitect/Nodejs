@@ -1,4 +1,3 @@
-
 // // 1. -> Get the Path and extensions.
 // const path = require("path");
 
@@ -81,4 +80,3 @@
 //         }
 //     });
 // })
-
