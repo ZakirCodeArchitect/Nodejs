@@ -7,9 +7,8 @@ function sleep(milliseconds){
     },milliseconds);
 }
 
-sleep(1000)
+sleep(1000);
 
 console.log("do something else...");
-
 
 // here this is done asynchronously becuase it'll not wait for the setTimout to complete its execution it'll go the next and comeback when the execution of the setTimout is completed.

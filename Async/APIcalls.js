@@ -9,7 +9,7 @@ const makeAPICall = (time) => {
 
 let multiAPICalls = [makeAPICall(1000), makeAPICall(2000), makeAPICall(500)];
 
-// Promise.all(multiAPICalls).then((val) => { console.log(val)} ) //so it is going to return me array of API Calls
+// Promise.all(multiAPICalls).then((val) => { console.log(val)} ) // so it is going to return me array of API Calls
 
 // These above all API Calls were simultaneosly 
 

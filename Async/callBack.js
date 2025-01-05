@@ -9,7 +9,8 @@ function asyncTask(cb){
     setTimeout(cb,0); //because of using here setTimeout we made our function callback function to make it work asynchronously, 
 }
 
-asyncTask(() => console.log(name))
-console.log("Task Ended")
+asyncTask(() => console.log(name));
+console.log("Task Ended");
 const name = "zakir";
+
 

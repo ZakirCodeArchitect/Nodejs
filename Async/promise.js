@@ -18,32 +18,36 @@ promise.then(
 
 // Direct Method
 
-// const p = Promise.resolve("Execution is Done");
-// p.then((val) => {console.log(val)}) // not possible by call back functions.
+const p = Promise.resolve("Execution is Done");
+p.then((val) => {console.log(val)}) // not possible by call back functions.
 
 // promises are asynchronous by nature
 
 
 
-/* Converting call-back functions to promise 
+// Converting call-back functions to promise 
 // Proving promises are asynchronous in nature.
 function asyncTask()
 {
-    return Promise.resolve();
+    return new Promise((resolve) => {
+        resolve();
+    })
+    // return Promise.resolve();
 }
 
-asyncTask().then(() => console.log(name))
+asyncTask()
+    .then(() => console.log(name))
 
 const name = "Zakir";
 
-*/
+
 
 // const p = Promise.resolve("Done")
 
-// p.then((val) => { 
-//     console.log(val)
-//     return "Done2"
-// }).then((val) => console.log(val))
-//     .catch((val) => console.log(val)) // inorder to catch an error
+p.then((val) => { 
+    console.log(val)
+    return "Done2"
+}).then((val) => console.log(val))
+    .catch((val) => console.log(val)) // inorder to catch an error
 
 // so in a nested then function , the prevous .then function has to return some value in order for the next one to get accepted.
