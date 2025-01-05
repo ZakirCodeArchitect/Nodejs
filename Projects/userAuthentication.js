@@ -52,8 +52,6 @@ function goToHomePage(userAuthStatus) {
 async function performTask(){
     try {
         const response = await userLogin();
-        console.log("User Validated")
-
         const userAuthStatus = await goToHomePage(response);
         console.log(userAuthStatus);
         interface.close(); // to close the interface
